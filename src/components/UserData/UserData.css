@@ -1,0 +1,19 @@
+.user {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.user__image {
+  max-width: 150px;
+  margin-bottom: 5px;
+}
+
+.user__name {
+  margin: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.user__phone {
+  display: block;
+}
