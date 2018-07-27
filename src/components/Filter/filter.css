@@ -1,0 +1,16 @@
+.filter {
+  padding: 10px 0;
+}
+
+.filter .filter__btn {
+  color: #333;
+  border-color: #ccc;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.filter .filter__btn--reset {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}

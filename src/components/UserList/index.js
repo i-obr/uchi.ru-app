@@ -7,7 +7,7 @@ import './UserList.css';
 class UserList extends Component {
   state = {
     isShowModal: false,
-    activeUserId: null,
+    activeUser: null,
   }
 
   showModal = () => {
@@ -18,9 +18,9 @@ class UserList extends Component {
     this.setState({ isShowModal: false });
   }
 
-  handleClick = activeUserId => {
+  handleClick = activeUser => {
     this.showModal();
-    this.setState({ activeUserId });
+    this.setState({ activeUser });
   }
 
   render() {
@@ -43,7 +43,7 @@ class UserList extends Component {
           { userEl }
         </ul>
         <Modal isOpen = { isShowModal } onHide = { this.hideModal }>
-          <ActiveUser data = { this.props.data } active = { this.state.activeUserId } />
+          <ActiveUser data = { this.props.data } active = { this.state.activeUser } />
         </Modal>
       </div>
     )
